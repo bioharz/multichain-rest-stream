@@ -17,7 +17,6 @@ function MultichainRouter(multichainHost, multichainPort, multichainUser, multic
 
         logger.info('Setting up multichain routes');
 
-
         router.get('/getstreamitem/:stream/:txid', async (req, res) => {
             try {
                 let item = await this.multichainNodeAsync.getStreamItem({
@@ -30,7 +29,6 @@ function MultichainRouter(multichainHost, multichainPort, multichainUser, multic
                 res.status(500).send({error: err});
             }
         });
-
 
         router.get('/getinfo', async (req, res) => {
             console.log("getinfo");
