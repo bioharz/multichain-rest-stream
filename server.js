@@ -6,8 +6,8 @@ const bodyParser = require('body-parser');
 
 const MultichainRouter = require('./multichain-router');
 
-//const PORT = 6000;
 const PORT = 9123;
+const IP = '127.0.0.1';
 const app = express();
 
 app.use(bodyParser.urlencoded({
@@ -28,8 +28,8 @@ app.get('/health', (req, res) => {
     res.send('OK');
 });
 
-let server = app.listen(PORT, function () {
-    logger.info(`Multichain REST running on port ${PORT}`);
+let server = app.listen(PORT, IP, function () {
+    logger.info(`Multichain REST running on port ${IP}:${PORT}`);
 });
 
 server.timeout = 15000;
