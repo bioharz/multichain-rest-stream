@@ -21,6 +21,6 @@
     "bluebird": "^3.5.1",
     "console-server": "^1.0.9",
     "express": "^4.16.2",
-    "multichain-node": "^2.1.6-version1.0.2"
+    "multichain-node": "^2.2.0-version1.0.4"
   }
 }

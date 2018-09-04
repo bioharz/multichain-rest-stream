@@ -6,7 +6,8 @@ const bodyParser = require('body-parser');
 
 const MultichainRouter = require('./multichain-router');
 
-const PORT = 6000;
+//const PORT = 6000;
+const PORT = 9123;
 const app = express();
 
 app.use(bodyParser.urlencoded({
